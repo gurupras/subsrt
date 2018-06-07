@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/papnkukn/subsrt/issues"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "nodeunit": "^0.11.2"
+  }
 }

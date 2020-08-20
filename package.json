@@ -1,24 +1,22 @@
 {
-  "name": "subsrt",
-  "description": "Subtitle converter",
-  "version": "1.1.1",
-  "author": "Papn Kukn",
-  "license": "MIT",
+  "name": "@gurupras/subsrt",
+  "version": "1.1.2",
+  "description": "Subtitle converter. Forked from https://github.com/papnkukn/subsrt",
   "main": "dist/bundle.js",
-  "bin": {
-    "subsrt": "bin/subsrt.js"
-  },
   "scripts": {
-    "test": "nodeunit test"
+    "test": "nodeunit test",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/papnkukn/subsrt"
+    "url": "git+https://github.com/gurupras/subsrt.git"
   },
+  "author": "Guru Prasad Srinivasa",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/papnkukn/subsrt/issues"
+    "url": "https://github.com/gurupras/subsrt/issues"
   },
-  "dependencies": {},
+  "homepage": "https://github.com/gurupras/subsrt#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
@@ -32,5 +30,6 @@
     "nodeunit": "^0.11.2",
     "webpack": "^4.22.0",
     "webpack-cli": "^3.1.2"
-  }
+  },
+  "dependencies": {}
 }

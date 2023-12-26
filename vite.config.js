@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+/// <reference types="vitest" />
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -8,6 +9,11 @@ export default defineConfig({
       name: 'subsrt',
       fileName: 'subsrt',
       formats: ['es', 'cjs', 'umd']
+    }
+  },
+  test: {
+    coverage: {
+      provider: 'v8'
     }
   }
 })

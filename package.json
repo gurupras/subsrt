@@ -1,11 +1,12 @@
 {
   "name": "@gurupras/subsrt",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Subtitle converter. Forked from https://github.com/papnkukn/subsrt",
+  "type": "module",
   "main": "dist/subsrt.js",
   "module": "dist/subsrt.mjs",
   "scripts": {
-    "test": "nodeunit test",
+    "test": "vitest run --coverage",
     "build": "vite build"
   },
   "repository": {
@@ -19,19 +20,18 @@
   },
   "homepage": "https://github.com/gurupras/subsrt#readme",
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "babel-loader": "^8.0.4",
-    "eslint": "^5.7.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "nodeunit": "^0.11.2",
-    "vite": "^4.1.1"
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@vitest/coverage-v8": "^1.1.0",
+    "babel-loader": "^8.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.5.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "vite": "^5.0.10",
+    "vitest": "^1.1.0"
   },
-  "dependencies": {},
   "exports": {
     "./dist/*": "./dist/*"
   }

@@ -33,6 +33,7 @@
     "vitest": "^1.1.0"
   },
   "exports": {
+    ".": "./dist/subsrt.js",
     "./dist/*": "./dist/*"
   }
 }

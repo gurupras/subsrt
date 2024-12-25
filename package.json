@@ -1,6 +1,6 @@
 {
   "name": "@gurupras/subsrt",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Subtitle converter. Forked from https://github.com/papnkukn/subsrt",
   "type": "module",
   "main": "dist/subsrt.cjs",

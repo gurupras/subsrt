@@ -6,8 +6,8 @@ describe('Convert', () => {
   const extensions = subsrt.list()
 
   for (let i = 0; i < extensions.length; i++) {
+    const ext1 = extensions[i]
     for (let j = 0; j < extensions.length; j++) {
-      const ext1 = extensions[i]
       const ext2 = extensions[j]
 
       test(`Convert .${ext1} to .${ext2}`, () => {

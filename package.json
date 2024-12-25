@@ -3,8 +3,8 @@
   "version": "2.0.3",
   "description": "Subtitle converter. Forked from https://github.com/papnkukn/subsrt",
   "type": "module",
-  "main": "dist/subsrt.js",
-  "module": "dist/subsrt.mjs",
+  "main": "dist/subsrt.cjs",
+  "module": "dist/subsrt.js",
   "scripts": {
     "test": "vitest run --coverage",
     "build": "vite build"
@@ -33,7 +33,10 @@
     "vitest": "^2.1.8"
   },
   "exports": {
-    ".": "./dist/subsrt.js",
+    ".": {
+      "require": "./dist/subsrt.cjs",
+      "import": "./dist/subsrt.js"
+    },
     "./dist/*": "./dist/*"
   }
 }
